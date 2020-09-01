@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h1>Introduction to java script </h1>
+<style>
+table,tr,td,th{
+	border:1px solid black;
+}
+</style>
 </head>
 <body>
-<p id="demo">this content should be changed by clicking the below button </p>
-<button type="button" onclick='document.getElementById("demo").innerHTML="java script is easy to learn,it is one of the most popular programming language,java script to program the behaviour of web pages"'>Click to read introduction</button>
+<h1>Finding average </h1>
+<p id="demo"></p>
+<table><tr>
+	<th>s.no</th>
+	<th>subject name</th>
+	<th>marks</th>
+	</tr>
+	<tr>
+	<td>1</td>
+	<td>c</td>
+	<td>60</td>
+	</tr>
+	<tr>
+	<td>2</td>
+	<td>python</td>
+	<td>70</td>
+	</tr>
+	<tr>
+	<td>3</td>
+	<td>java</td>
+	<td>80</td>
+	</tr>
+	<tr>
+	<td>result</td>
+	<td>Total:</td>
+	<td>210</td>
+	</tr>
+	<tr>
+	<td>avg</td>
+	<td>Average:</td>
+	<td>70</td>
+	</tr>
+</table>
 <script>
-console.log(5%6);
 var array = [1,2,3,4,5];
 document.getElementById("demo").innerHTML=
 typeof array[3];
-
+var c=60;
+var python=70;
+var java=80;
+var Total=c+python+java;
+var Average=(Total/3);
+document.getElementById("demo").innerHTML="Average:"+Average;
 </script>
-<p>for viewing the output</p>
-<p>1.press f12 button on keyboard it will activate debugging</p>
-<p>2.select console option there</p>
-<p>3.run the file to view output</p>
 </body>
 </html>
