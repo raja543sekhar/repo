@@ -8,8 +8,9 @@ table,tr,td,th{
 </style>
 </head>
 <body>
-<h1>Finding average </h1>
+<h1>creating function and finding average</h1>
 <p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
 var array = [1,2,3,4,5];
@@ -20,7 +21,13 @@ var python=70;
 var java=80;
 var Total=c+python+java;
 var Average=(Total/3);
-document.getElementById("demo").innerHTML="Average:"+Average;
+var Avg=findAverage(60,70,80);
+document.getElementById("demo").innerHTML = "Avg:"+Avg;
+document.getElementById("demo1").innerHTML="Average:"+Average;
+function findAverage(c,python,java)
+{
+return ((c+python+java)/3);
+}
 </script>
 <table><tr>
 	<th>s.no</th>
@@ -45,12 +52,12 @@ document.getElementById("demo").innerHTML="Average:"+Average;
 	<tr>
 	<td>result</td>
 	<td>Total:</td>
-	<td><script>document.write(Total);</script></td>
+	<td>210</td>
 	</tr>
 	<tr>
 	<td>avg</td>
 	<td>Average:</td>
-	<td><script>document.write(Average);</script></td>
+	<td><script>document.write(Avg)</script></td>
 	</tr>
 </table>
 </body>
