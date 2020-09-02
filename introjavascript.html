@@ -10,6 +10,18 @@ table,tr,td,th{
 <body>
 <h1>Finding average </h1>
 <p id="demo"></p>
+
+<script>
+var array = [1,2,3,4,5];
+document.getElementById("demo").innerHTML=
+typeof array[3];
+var c=60;
+var python=70;
+var java=80;
+var Total=c+python+java;
+var Average=(Total/3);
+document.getElementById("demo").innerHTML="Average:"+Average;
+</script>
 <table><tr>
 	<th>s.no</th>
 	<th>subject name</th>
@@ -33,24 +45,13 @@ table,tr,td,th{
 	<tr>
 	<td>result</td>
 	<td>Total:</td>
-	<td>210</td>
+	<td><script>document.write(Total);</script></td>
 	</tr>
 	<tr>
 	<td>avg</td>
 	<td>Average:</td>
-	<td>70</td>
+	<td><script>document.write(Average);</script></td>
 	</tr>
 </table>
-<script>
-var array = [1,2,3,4,5];
-document.getElementById("demo").innerHTML=
-typeof array[3];
-var c=60;
-var python=70;
-var java=80;
-var Total=c+python+java;
-var Average=(Total/3);
-document.getElementById("demo").innerHTML="Average:"+Average;
-</script>
 </body>
 </html>
