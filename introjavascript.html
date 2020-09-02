@@ -8,13 +8,16 @@ table,tr,td,th{
 </style>
 </head>
 <body>
-<h1>java script regular expressions</h1>
+<h1>java script to learn about Math function</h1>
 <p>click below buttons to search for case-insensitive word in Name string</p>
 <p id="demo2"></p>
 <button type="button" onclick="findExpression()">click</button>
 
 <p id="demo"></p>
 <p id="demo1"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
 <script>
 var array = [1,2,3,4,5];
 document.getElementById("demo").innerHTML=
@@ -37,6 +40,21 @@ function findExpression(){
 	var nameincaps=Name.match(pattern);
 	document.getElementById("demo2").innerHTML= nameincaps;
 }
+var x=Math.random()
+document.getElementById("demo3").innerHTML=("random number:"+x);
+document.write("round of x:"+Math.round(x)+"<br>");
+document.write("Ceil of x:"+Math.ceil(x)+"<br>");
+document.write("Floor of x:"+Math.floor(x)+"<br>");
+var y=-10;
+document.getElementById("demo4").innerHTML=("absolute of y:"+Math.abs(y));
+var z=10;
+document.write("sqrt of z:"+Math.sqrt(z)+"<br>");
+var v=2;
+var u=Math.pow(z,v);
+document.getElementById("demo5").innerHTML=("power of z,x:"+u+"<br>");
+document.write("sin of z in radians:"+Math.sin(u)+"<br>");
+document.write("cos of z in radians:"+Math.cos(u)+"<br>");
+
 </script>
 <table><tr>
 	<th>s.no</th>
