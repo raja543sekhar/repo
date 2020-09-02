@@ -8,10 +8,13 @@ table,tr,td,th{
 </style>
 </head>
 <body>
-<h1>creating function and finding average</h1>
+<h1>java script regular expressions</h1>
+<p>click below buttons to search for case-insensitive word in Name string</p>
+<p id="demo2"></p>
+<button type="button" onclick="findExpression()">click</button>
+
 <p id="demo"></p>
 <p id="demo1"></p>
-
 <script>
 var array = [1,2,3,4,5];
 document.getElementById("demo").innerHTML=
@@ -27,6 +30,12 @@ document.getElementById("demo1").innerHTML="Average:"+Average;
 function findAverage(c,python,java)
 {
 return ((c+python+java)/3);
+}
+function findExpression(){
+	var Name="MY NAME IS RAJASEKHAR"
+	var pattern=/rajasekhar/i;
+	var nameincaps=Name.match(pattern);
+	document.getElementById("demo2").innerHTML= nameincaps;
 }
 </script>
 <table><tr>
