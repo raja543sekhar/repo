@@ -1,16 +1,24 @@
 <html>
 <head>
-<h3>regarding control statements</h3>
+<h3>regarding error handling</h3>
 
 </head>
 <body>
+<p id="demo"></p>
 <script>
 console.log(Date());
+var num = 1;
+try {
+  num.toUpperCase();
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
 var x=77;
 if(x>10 & x<100)
-{
-	document.write("yes the given number in between 10-100 <br>");
-}
+	{
+		document.write("yes the given number in between 10-100 <br>");
+	}
 </script>
 <script>
 switch(1)
