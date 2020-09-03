@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+function validateForm() {
+	var x = document.forms["registrationpage"]["fname"].value;
+	if (x == "") {
+    alert("fName must be filled out");
+    return false;
+	}
+	var y = document.forms["registrationpage"]["lname"].value;
+	if (y == "") {
+	alert("lName must be filled out");
+	return false;
+	}
+	var z = document.forms["registrationpage"]["gender"].value;
+	if (z == "") {
+    alert("gender must be filled out");
+    return false;
+	}
+	var b = document.forms["registrationpage"]["Streamname"].value;
+	if (b == "") {
+    alert("Stream must be filled out");
+    return false;
+	}
+	var c = document.forms["registrationpage"]["phone number"].value;
+	if ( isNaN(c) || c == "") {
+    alert("phone number must be filled out");
+    return false;
+	}
+	var a = document.forms["registrationpage"]["coursename"].value;
+	if (a == "") {
+    alert("courses must be filled out");
+    return false;
+	}
+}
+</script>
 </head>
 <body>
 	<h3>*fill the registration page with correct details</h3>
-	<form>
+	<form name="registrationpage" action="" onsubmit="return validateForm()" method="post">
 		<label for="fname">First name:</label><br>
 		<input type="text" id="fname"><br>
 		<label for="lname">last name:</label><br>
 		<input type="text" id="lname"><br><br>
 
-		<label for="male">gender:</label><br>
-		<input type="radio" id="male" name="gender" value="male"/>male<br>
-		<input type="radio" id="female" name="gender" value="female">female<br>
-		<input type="radio" id="other" name="gender" value="other">other<br><br>
+		<label for="gender">gender:</label><br>
+		<input type="radio" id="gender">male<br>
+		<input type="radio" id="gender">female<br>
+		<input type="radio" id="gender">other<br><br>
 		
-		<label for="cryptography and network security">courses:</label><br>		
-		<input type="checkbox" id="cryptography and network security" name="cryptography and network security">cryptography and network security<br>		
-		<input type="checkbox" id="software architecture and design patterns" name="software architecture and design patterns">software architecture and design patterns<br><br>
+		<label for="streamname">Stream:</label><br>
+		<input type="radio" id="streamname">CSE<br>
+		<input type="radio" id="streamname">IT<br><br>
 		
-		<label for="CSE">Stream:</label><br>
-		<input type="radio" id="CSE" name="CSE" value="CSE">CSE<br>
-		<input type="radio" id="IT" name="IT" value="IT">IT<br><br>
+		<label>Phone Number:</label>
+		<input type="number" maxlength="10"required><br>
+		
+		
+		<label for="coursename">courses:</label><br>		
+		<input type="checkbox" id="coursename">cryptography and network security<br>		
+		<input type="checkbox" id="coursename">software architecture and design patterns<br><br>
 
 		<input type="submit" value="submit">
 	</form>
