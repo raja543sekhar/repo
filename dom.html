@@ -1,10 +1,16 @@
 <html>
 <head>
-<h3>read date and print from console</h3>
+<h3>using different events for button</h3>
 </head>
 <body>
 <script>
 console.log(Date());
 </script>
+<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">the time now </button>
+<p id='demo'></p>
+<button type="button" onmouseout="document.getElementById('demo1').innerHTML=Date()">the time now </button>
+<p id='demo1'></p>
+<button type="button" onmouseover="document.getElementById('demo2').innerHTML=Date()">the time now </button>
+<p id='demo2'></p>
 </body>
 </html>
