@@ -5,8 +5,12 @@
 </head>
 <body>
 <p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
 <script>
 console.log(Date());
+
 var num = 1;
 try {
   num.toUpperCase();
@@ -19,6 +23,13 @@ if(x>10 & x<100)
 	{
 		document.write("yes the given number in between 10-100 <br>");
 	}
+var str="HTML is hyper text mark up language used for web pages";
+var position1 = str.indexOf("language");
+document.getElementById("demo1").innerHTML = position1;
+var position2 = str.indexOf("for");
+document.getElementById("demo2").innerHTML = position2;
+var position3 = str.indexOf("pages");
+document.getElementById("demo3").innerHTML = position3;
 </script>
 <script>
 switch(1)
