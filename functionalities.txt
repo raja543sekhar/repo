@@ -1,0 +1,12 @@
+Here i have created a text file regarding the functionalities of week-4 experiment :
+1.upon executing the code which uploaded on github we have a screen that consists of navigation bar with logos
+2.there we have the introduction,experiment etc...clickable links
+3.if we click the experiment then we will be showing a select dropdown list
+4.In that dropdown list we have 2 options namely languages like english and hindi(hint:refer to select language we want to perform task)
+5.after selecting language we are having number of buttons consists of english words
+6.if we click any button that will be displayed below "after selection "
+7.after clicking all buttons we have two buttons to check check the correctness and reform sentence
+8.correctness sentence have 2 outputs namely Wrong or Right answer.
+9.if it is wrong then we have a button names "show correct sentence".
+10.if that button clicked we have list of possible correct sentences.
+11.if you add label like it would be helpful "select language to perform the task " 
